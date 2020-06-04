@@ -1,0 +1,305 @@
+@charset "utf-8";
+/* CSS Document */
+*
+{
+	padding:0;
+	margin:0;
+}
+
+body
+{
+	width:1440px;
+	height:auto;
+	position:relative;
+	background: hsl(204, 43%, 93%);
+	font-family: 'Karla', sans-serif;
+}
+/**************************************************************************************/
+.grids
+{
+	width:640px;
+	height:480px;
+	display:grid;
+	grid-template-columns: 640px 320px 320px ;
+	grid-template-rows: 215px auto;
+	position:absolute;
+	top:170px;
+    left:30%;
+    box-shadow: 50px 50px 25px hsl(204, 43%, 93%);
+}
+/*******************************************************************************************/
+.grids .grid1
+{
+   width:640px;
+   background:#fff;
+   height:220px;
+   border-top-left-radius: 10px;
+   border-top-right-radius:10px; 
+	 box-shadow: 50px 50px 25px hsl(204, 43%, 93%);
+}
+.grids .grid1 h2
+{
+	margin-left:30px;
+	margin-top: 40px;
+	font-size: 25px;
+	color: hsl(179, 62%, 43%);
+}
+.grids .grid1 h3
+{
+	margin-left:30px;
+	color: hsl(71, 73%, 54%);
+}
+.grids .grid1 p
+{
+	margin-left:30px;
+	margin-top: 10px;
+	line-height: 1.7;
+	font-weight: 400;
+	color: #333;
+}
+/*************************************************************************************************/
+/*******************************************************************************************/
+.grids .grid2
+{
+	position:absolute;
+	top:215px;
+	width:320px;
+	height:260px;
+	background:#2BB3B1;
+	color: #fff;
+	border-bottom-left-radius: 10px;
+	 box-shadow: 50px 50px 25px hsl(204, 43%, 93%);
+
+}
+.grids .grid2 h2
+{
+	margin-left:30px;
+	margin-top: 20px;
+	font-size: 20px;
+}
+.grids .grid2 h3
+{
+	margin-left:30px;
+	font-size: 30px;
+	font-weight: 700; 
+}
+.grids .grid2 h3 small
+{
+	font-size: 15px;
+	font-weight: 400;
+}
+.grids .grid2 p
+{
+	margin-left:30px;
+	line-height: 1.7;
+	font-weight: 400;
+}
+.grids .grid2 button
+{
+	margin-left:30px;
+	margin-top:10px;
+	padding:15px 20px;
+	width:240px;
+	font-weight: 700;
+	color: #fff;
+	background: #BFDF32;
+	outline: none;
+	border: 0;
+	border-radius: 5px;
+	font-size: 16px;
+	
+}
+/*************************************************************************************************/
+/*******************************************************************************************/
+.grids .grid3
+{
+	width:320px;
+	position:absolute;
+	top:215px;
+	left:320px;
+	height:260px;
+	background:#4ABEBD;
+	padding-left: 0.5px;
+	color: #fff;
+	border-bottom-right-radius: 10px;
+}
+.grids .grid3 h2
+{
+	margin-left:30px;
+	font-size: 20px;
+	margin-top: 20px;
+
+}
+.grids .grid3 p
+{
+	margin-left:30px;
+	font-weight: 200;
+	line-height: 1.2;
+}
+/*************************************************************************************************/
+
+/**********************************attribution***********************************/
+footer .attribution
+{
+	position:absolute;
+	top:800px;
+	color:#000;
+	font-size: 20px;
+	left:440px;
+}
+footer .attribution i
+{
+	color:#f00;
+	font-size:25px;
+}
+footer .attribution a 
+{
+	color:#000;
+	text-decoration: none;
+}
+/****************************************************************************************************/
+@media (max-width:375px)
+{
+	body
+  {
+	
+	width:375px;
+	height:auto;
+	position:relative;
+	}
+/***************************************************************************/
+	.grids
+   {
+	position:relative;
+	margin: 0 auto;
+	width:210px;
+	}
+/*********************************************************************************/
+	.grids .grid1
+    {
+     width:210px;
+     height:265px;
+	}
+	.grids .grid1 h2
+    {
+	margin-left:20px;
+	margin-top: 20px;
+	font-size: 18px;
+	color: hsl(179, 62%, 43%);
+    }
+    .grids .grid1 h3
+    {
+	margin-left:20px;
+	color: hsl(71, 73%, 54%);
+	font-size: 12px;
+    }
+    .grids .grid1 p
+    {
+	margin-left:20px;
+	margin-top: 10px;
+	font-size: 8px;
+	line-height: 1.7;
+	font-weight: 400;
+	color: #333;
+	text-align:center;
+    }
+/****************************************************************************************************/
+	.grids .grid2
+    {
+	border-top-left-radius,border-top-right-radius:10px;
+    width:210px;
+    height:230px;
+	border-bottom-left-radius: 0px;
+	}
+    
+	.grids .grid2 h2
+    {
+	margin-left:20px;
+	margin-top: 20px;
+	font-size: 18px;
+     }
+   .grids .grid2 h3
+    {
+	margin-left:20px;
+	font-size: 12px;
+	font-weight: 700; 
+    }
+   .grids .grid2 h3 small
+    {
+	font-size: 8px;
+	font-weight: 400;
+    }
+   .grids .grid2 p
+    {
+	margin-left:20px;
+	line-height: 1.7;
+	font-weight: 400;
+	font-size: 8px;
+    }
+   .grids .grid2 button
+    {
+	margin-left:20px;
+	margin-top:10px;
+	padding:8px 5px;
+	width:140px;
+	font-weight: 700;
+	color: #fff;
+	background: #BFDF32;
+	outline: none;
+	border: 0;
+	border-radius: 5px;
+	font-size: 8px;
+	
+    }
+/*************************************************************************************************/
+	.grids .grid3
+    {
+    width:210px;
+    height:230px;
+	position:absolute;
+	top:445px;
+	left:0;
+	background:#4ABEBD;
+	color: #fff;
+	padding-left: 0px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+    }
+    .grids .grid3 h2
+    {
+	margin-left:20px;
+	font-size: 18px;
+	margin-top: 10px;
+
+    }
+    .grids .grid3 p
+    {
+	margin-left:20px;
+	font-weight: 200;
+	line-height: 1.7;
+	font-weight: 400;
+	font-size: 8px;
+    }
+/*************************************************************************************************/
+
+/**********************************attribution***********************************/
+    footer .attribution
+   {
+	position:absolute;
+	top:850px;
+	color:#000;
+	font-size: 8px;
+	left:200px;
+	text-align: center;
+   }
+     footer .attribution i
+   {
+	color:#f00;
+	font-size:12px;
+   }
+   footer .attribution a 
+   {
+	color:#000;
+	text-decoration: none;
+   }
+}
